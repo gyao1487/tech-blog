@@ -1,26 +1,24 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class comment extends Model {}
+class Comment extends Model {}
 
-BlogPost.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      primaryKey: true,
       autoIncrement: true,
     },
-
     comment: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-
     created_at: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
     },
-
     post_id: {
       type: DataTypes.INTEGER,
       references: {
