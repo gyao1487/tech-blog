@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Greetings from Avalanche!",
+    "content": "Hi friends! This is Tifa and I am a software engineer at Avalanche! I'll be sharing our new tech and developments on this blog! Check out our website for updated news about Avalanche!",
+    "created_at": "2023-01-07 03:30:00",
+    "user_id": "2"
+  },
+  {
+    "id": 2,
+    "title": "Shy Freelance Dev",
+    "content": "Hey. Name's Cloud and I am a freelance web developer. Looking to share any knowledge I have, and learn from you all as well. You can check out my work at github.com/cstrife. Don't do great in-person, so glad to be here on this platform.",
+    "created_at": "2023-01-07 20:30:00",
+    "user_id": "1"
+  }
+]

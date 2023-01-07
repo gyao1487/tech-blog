@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "comment": "Um hey, Tifa. Didn't know you were working with Avalanche, that's pretty cool.",
+      "created_at": "2023-01-07 21:30:00",
+      "post_id": 1,
+      "user_id": 2
+    },
+    {
+     "id": 2,
+     "comment": "CLOUD! What are you doing here? You're in tech now? That's so exciting! We might need an extra hand at Avalanche! I'll email you deets.",
+     "created_at": "2023-01-07 22:30:00",
+     "post_id": 2,
+     "user_id": 2
+    }
+  ]

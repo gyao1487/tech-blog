@@ -11,7 +11,7 @@ Blogpost.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    
+
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -26,7 +26,7 @@ Blogpost.init(
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
     },
-   
+
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -43,3 +43,5 @@ Blogpost.init(
     modelName: "blogpost",
   }
 );
+
+module.exports = Blogpost;

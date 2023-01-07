@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Cloud", 
+    "email": "cstrife@merc.com",
+    "password":"GimmeMateria"
+  },
+  {
+    "id": 2,
+    "name": "Tifa", 
+    "email": "tlockhart@avalanche.org",
+    "password":"BlueDress"
+  }
+]
