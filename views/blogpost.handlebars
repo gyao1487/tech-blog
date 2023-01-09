@@ -1,12 +1,12 @@
 <section class="container">
-  <h3>{{blogpost.title}}</h3>
+  <h3>{{blogpost.tit}}</h3>
   <h4>{{user.name}}</h4>
   <h4>{{blogpost.created_at}}</h4>
-  <!-- If the user is logged in, render the comments-->
+  <!-- If the user is logged in, render the gallery content -->
   {{#if loggedIn}}
   <section class="flex-row justify-center">
-    {{#each blogpost.comment as |comment|}}
-    {{> comment-details}}
+    {{#each gallery.paintings as |painting|}}
+    {{> painting-details}}
     {{/each}}
   </section>
 </section>
