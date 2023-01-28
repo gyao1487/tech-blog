@@ -6,10 +6,16 @@ const blogRoutes = require('./blog-routes')
 
 router.use('/', homeRoutes);
 //Routes for homepage, login, logout functions
+//GET for all blogposts
+//POST route for login
+//POST route for logout
 
 router.use(blogRoutes);
-//Routes for getting blogposts by ID
+//GET route for individual blogpost by ID
 
+router.use(dashboardRoutes);
+//GET route for blogposts specific to the user/dashboard
+//POST route for existing blogposts for that user
 
 router.use('/api', apiRoutes);
 

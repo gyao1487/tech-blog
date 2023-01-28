@@ -12,5 +12,11 @@
     "content": "Hey. Name's Cloud and I am a freelance web developer. Looking to share any knowledge I have, and learn from you all as well. You can check out my work at github.com/cstrife. Don't do great in-person, so glad to be here on this platform.",
     "created_at": "2023-01-07 20:30:00",
     "user_id": "1"
+  },
+  {
+    "title": "CSS Specificity",
+    "content": "Just wanted to share an article on CSS Specificity to all those out there learning the ins and outs of CSS! https://www.nicchan.me/blog/css-specificity-for-beginners/ . It was really helpful seeing specificity through the analogy of being a teacher addressing specific students in an auditorium full of them. Give it a read! ",
+    "created_at": "2023-01-07 20:30:00",
+    "user_id": "2"
   }
 ]
