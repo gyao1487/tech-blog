@@ -1,0 +1,56 @@
+{{! <div class="ui segment">
+  <div class="ui active dimmer" id="signup_dimmer">
+    <div class="ui text loader">Loading</div>
+  </div> }}
+<div id="signupForm">
+  <h2 class="primary header">
+    <div class="content"> Join Technobabble!</div>
+  </h2>
+
+  <div class="ui four column centered grid">
+    <div class="column" id="signupModal">
+      <form action="#" class="ui large inverted form">
+        <div class="ui stacked inverted segment " id ="boxShadow">
+          <div class="field">
+            <label>Username</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your username here"
+            />
+          </div>
+
+          <div class="field">
+            <label>Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter password here"
+            />
+          </div>
+
+          <div class="field">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password again"
+            />
+          </div>
+            <div class="flex">
+        <button class="ui primary button" id="submit" type="submit">Sign up!</button>
+      </div>
+        </div>
+          
+      </form>
+  <div class="ui floating message flex">
+                    <p>Already registered? <a href="/login">Log in here! </a></p>
+                </div>
+    </div>
+
+  </div>
+
+</div>

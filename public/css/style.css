@@ -10,6 +10,28 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 #footerstay {
     margin-top: auto;
+}
+
+#signinForm , #signupForm{
+    padding-top: 5rem;
+}
+
+#loginModal{
+   min-width:fit-content 
+}
+
+#signupModal {
+    min-width: 400px;
+ 
+}
+
+#boxShadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
