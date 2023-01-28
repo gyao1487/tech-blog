@@ -6,10 +6,11 @@
     <!-- The card contains the content of the blogpost -->
     <p>{{blogpost.content}}</p>
   <!-- If the user is logged in, render the comments-->
-  {{!-- {{#if loggedIn}} --}}
+  {{#if loggedIn}}
    {{#each blogpost.comments}}
    {{>comment-card}}
    {{/each}}
+  {{/if}}
 
 </section>
 <!-- Otherwise, provide a link to login -->

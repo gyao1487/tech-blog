@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { Blogpost, Comment, User } = require("../models");
-//GET ONE Blogpost (with comments)
+
+//GET ONE Blogpost (with comments ONLY when logged in)
 router.get("/blogpost/:id", async (req, res) => {
     try {
       const dbBlogpostData = await Blogpost.findByPk(req.params.id, {
@@ -9,7 +10,6 @@ router.get("/blogpost/:id", async (req, res) => {
               model: User,
               attributes:['name']
           }
-   
       });
       const dbCommentData = await Comment.findAll({
           where: {
@@ -21,16 +21,14 @@ router.get("/blogpost/:id", async (req, res) => {
               attributes:['id','name']
           }
       })
-  
       const blogpost = await dbBlogpostData.get({ plain: true })
       const comments = await dbCommentData.map(comment => comment.get({plain:true}))
       blogpost.comments = comments
       console.log(blogpost.comments.user)
       res.render("blogpost", {
         blogpost,
-      //   logged_in:req.session.logged_in
+        loggedIn:req.session.logged_in
       });
-  
   
     } catch (err) {
       console.log(err);
