@@ -1,16 +1,18 @@
 <section class="container">
-  <h3>{{blogpost.tit}}</h3>
-  <h4>{{user.name}}</h4>
-  <h4>{{blogpost.created_at}}</h4>
-  <!-- If the user is logged in, render the gallery content -->
-  {{#if loggedIn}}
-  <section class="flex-row justify-center">
-    {{#each gallery.paintings as |painting|}}
-    {{> painting-details}}
-    {{/each}}
-  </section>
+      <!-- The card contains the blogpost title as the card header -->
+    <header>{{blogpost.title}}</header>
+    
+  <p>Posted by{{blogpost.User.name}} on {{blogpost.created_at}}</p>
+    <!-- The card contains the content of the blogpost -->
+    <p>{{blogpost.content}}</p>
+  <!-- If the user is logged in, render the comments-->
+  {{!-- {{#if loggedIn}} --}}
+   {{#each blogpost.comments}}
+   {{>comment-card}}
+   {{/each}}
+
 </section>
 <!-- Otherwise, provide a link to login -->
-{{else}}
+{{!-- {{else}}
 <a href="/login">You must login first to view this page</a>
-{{/if}}
+{{/if}} --}}
