@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
       blogpost.get({ plain: true })
     );
     res.render("homepage", {
-      blogposts,
+      blogposts,  loggedIn: req.session.logged_in
     });
   } catch (err) {
     console.log(err);

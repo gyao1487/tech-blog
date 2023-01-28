@@ -2,8 +2,8 @@ const router = require('express').Router();
 const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes');
 const blogRoutes = require('./blog-routes');
-const userRoutes = require ('./user-routes')
-
+const userRoutes = require ('./user-routes');
+const dashboardRoutes = require('./dashboard-routes')
 
 router.use('/', homeRoutes);
 //Routes for homepage, login, logout functions

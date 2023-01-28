@@ -10,7 +10,6 @@ router.post("/signup", async (req, res) => {
         req.session.user_id = newUser.id; 
         res.status(200).json(newUser);
       });
-
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
