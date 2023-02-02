@@ -7,12 +7,12 @@
    
         <div class="ui four column centered grid">
             <div class="column" id="loginModal">
-                <form class=" floating ui large form login-form" action="/login" method="POST">
+                <form class=" floating ui large form" id="login-form">
                     <div class="ui stacked segment">
                         <div class="field">
                             <div class="ui left icon input">
                                 <i class="user icon"></i>
-                                <input type="text" name="username" id="username-login" placeholder="Username">
+                                <input type="text" name="email" id="email-login" placeholder="Email">
                             </div>
                         </div>
                         <div class="field">
@@ -21,8 +21,7 @@
                                 <input type="password" id="password-login" name="password" placeholder="Password">
                             </div>
                         </div>
-                        {{!-- I changed the below div to button so that the login functionality works --}}
-                        <button type="submit" class="ui fluid large primary submit button">Login</button>
+                        <button type="submit" id="login-submit" class="ui fluid large primary submit button">Login</button>
                     </div>
 
                     <div class="ui error message"></div>

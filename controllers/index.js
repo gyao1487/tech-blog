@@ -5,7 +5,7 @@ const blogRoutes = require('./blog-routes');
 const userRoutes = require ('./user-routes');
 const dashboardRoutes = require('./dashboard-routes')
 
-router.use('/', homeRoutes);
+router.use(homeRoutes);
 //Routes for homepage, login, logout functions
 //GET for all blogposts
 //GET for login page

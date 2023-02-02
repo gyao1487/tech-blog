@@ -1,37 +1,49 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-bottom: 7rem;
 }
 
 h2 {
-    text-align: center;
-    padding-bottom: 15px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 #footerstay {
-    margin-top: auto;
+  margin-top: auto;
 }
-
+/* 
 #signinForm , #signupForm{
-    padding-top: 5rem;
-}
+    padding-top: 3rem;
+} */
 
-#loginModal{
-   min-width:fit-content 
+#loginModal {
+  min-width: 400px;
 }
 
 #signupModal {
-    min-width: 400px;
- 
+  min-width: 400px;
 }
 
-#boxShadow{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.blogpostCard {
+  margin: 2rem;
+  min-width: 200px;
+}
+
+.main.container {
+  margin-top: 7em;
 }

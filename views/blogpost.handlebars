@@ -2,7 +2,7 @@
       <!-- The card contains the blogpost title as the card header -->
     <header>{{blogpost.title}}</header>
     
-  <p>Posted by{{blogpost.User.name}} on {{blogpost.created_at}}</p>
+  <p>Posted by {{blogpost.User.name}} on {{blogpost.created_at}}</p>
     <!-- The card contains the content of the blogpost -->
     <p>{{blogpost.content}}</p>
   <!-- If the user is logged in, render the comments-->
@@ -13,7 +13,3 @@
   {{/if}}
 
 </section>
-<!-- Otherwise, provide a link to login -->
-{{!-- {{else}}
-<a href="/login">You must login first to view this page</a>
-{{/if}} --}}
