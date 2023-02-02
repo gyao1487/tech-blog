@@ -24,12 +24,11 @@ router.post("/login", async (req, res) => {
         where: { email: req.body.email },
       });
   
-      if (!userData.email) {
-        res.status(400).json({ message: 'Incorrect email or password. Please try again!' });
+      if (!userData) {
+        res.send(
+          "<script>alert('Invalid email or password, please try again!'); window.location.href = '/login';</script>"
+        );
         return;
-        // res.send(
-        //   "<script>alert('Invalid email or password, please try again!'); window.location.href = '/login';</script>"
-        // );
       }
   
       // Verify the posted password with the password store in the database
@@ -47,7 +46,7 @@ router.post("/login", async (req, res) => {
         req.session.user_id = userData.id;
         //CONFIRMED console logging req.session.user_id returns the user_id of the logged in person
         req.session.logged_in = true;
-        // res.redirect("/dashboard");
+        res.redirect("/dashboard");
       });
     } catch (err) {
       res.status(400).json(err);

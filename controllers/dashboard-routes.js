@@ -9,7 +9,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
       where: {
         user_id: req.session.user_id,
       },
-      include: [{ model: User, attributes: ["name", "created_at"] }],
+      include: [{ model: User, attributes: ["name"] }],
     });
     // res.status(200).json(dashboardData);
     const blogposts = dashboardData.map((posts) => posts.get({ plain: true }));
