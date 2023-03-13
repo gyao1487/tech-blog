@@ -1,3 +1,21 @@
 {{#each blogposts as |blogpost|}}
 {{> blogpost-details}}
 {{/each}}
+<div class="ui fluid card link" id="blogform"> 
+    <div class="content">
+  <form class="ui form" id="test-form">
+     <div class="header"></div>
+    <div class="field">
+      <label for="name">Post Title</label>
+      <input type="text" name="fullname" id="fullname">
+    </div>
+  <div class="field">
+    <label>Blogpost</label>
+    <textarea></textarea>
+  </div>
+    <button class="ui button primary" type="submit">
+      Submit
+    </button>
+  </form>
+  </div>
+</div>

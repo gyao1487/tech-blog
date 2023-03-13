@@ -24,23 +24,38 @@ router.get("/dashboard", withAuth, async (req, res) => {
   }
 });
 
-//POST new blogpost event (must be logged in)
+//POST new blogpost (must be logged in)
 router.post("/dashboard", async (req, res) => {
   try {
-    const { title, content, created_at } = req.body;
+    const { title, content } = req.body;
     const user_id = req.session.user_id;
 
     const newBlogpost = await Blogpost.create({
       title,
       content,
-      created_at,
       user_id,
     });
     res.redirect("/dashboard");
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
+    res.status(500).render('error', { message: 'An error occurred' });
   };
 });
+
+// //PUT (edit) existing blogpost (must be logged in)
+// router.put ("/dashboard", async (req, res) => {
+//   try{
+//     const {title, content} = req.body;
+//     const user_id = req.session.user_id;
+
+
+//     res.send
+
+    
+
+//   }
+// })
+
 
 module.exports = router;
